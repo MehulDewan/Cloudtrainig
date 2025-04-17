@@ -17,7 +17,7 @@
     - name: Wait for cleanup
       shell: sleep 30 
 
-    # Creates the number of containers defined by the variable create_containers, using values from vars file
+    # Creates the number of containers defined by the variable create_containers, using values from vars files
     - name: Create default containers
       docker_container:
         name: "{{ default_container_name }}{{ item }}"
